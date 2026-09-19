@@ -9,7 +9,7 @@ class LateFeeAccount {
     }
 
     public final double calculateLateFee(int daysLate) {
-        return totalFee * 0.10;
+        return totalFee * daysLate / 100.0;
     }
 
     public final void printSummary(int daysLate) {
